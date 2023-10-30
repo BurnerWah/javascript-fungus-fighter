@@ -36,6 +36,12 @@ function update() {
   const hpText = document.querySelector(".hp-text")
   apText.textContent = `${playerAP} AP`
   hpText.textContent = `${fungusHP} HP`
+
+  const fungus = document.querySelector(".freaky-fungus")
+  if (fungusHP <= 0) {
+    fungus.classList.remove("walk")
+    fungus.classList.add("dead")
+  }
 }
 
 function arcaneScepter() {
