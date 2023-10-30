@@ -27,6 +27,15 @@ function attack(apCost, damage) {
     fungusHP = 0
   }
   console.log(`Player AP: ${playerAP}, Fungus HP: ${fungusHP}`)
+
+  update()
+}
+
+function update() {
+  const apText = document.querySelector(".ap-text")
+  const hpText = document.querySelector(".hp-text")
+  apText.textContent = `${playerAP} AP`
+  hpText.textContent = `${fungusHP} HP`
 }
 
 function arcaneScepter() {
