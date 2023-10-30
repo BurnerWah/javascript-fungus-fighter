@@ -45,6 +45,10 @@ function update() {
   if (playerAP <= 0) {
     fungus.classList.remove("walk")
     fungus.classList.add("jump")
+    for (const button of document.querySelectorAll(".attack-btn")) {
+      console.log(button)
+      button.setAttribute("disabled", "")
+    }
   }
 }
 
