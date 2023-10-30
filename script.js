@@ -42,6 +42,10 @@ function update() {
     fungus.classList.remove("walk")
     fungus.classList.add("dead")
   }
+  if (playerAP <= 0) {
+    fungus.classList.remove("walk")
+    fungus.classList.add("jump")
+  }
 }
 
 function arcaneScepter() {
